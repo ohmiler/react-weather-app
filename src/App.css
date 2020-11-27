@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 480px;
+  height: 800px;
+  margin: 2rem auto;
+  background-image: url("img/app.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.App:hover {
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.App.hot {
+  background-image: linear-gradient(to bottom,
+      rgba(255, 167, 16, 0.52),
+      rgba(0, 0, 0, 0.73)),
+    url("img/hot.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+}
+
+main {
+  min-height: 100vh;
+  padding: 25px;
+}
+
+.App.cold {
+  background-image: linear-gradient(to bottom,
+      rgba(0, 229, 255, 0.52),
+      rgba(0, 0, 0, 0.73)),
+    url("img/cold.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s ease;
+}
+
+.search-container {
+  width: 100%;
+  margin: 0 0 75px;
+  /* top, left-right, bottom */
+}
+
+.search-bar {
+  color: black;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.4s ease;
+}
+
+.search-container .search-bar:focus {
+  background-color: white;
+}
+
+.location-container {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.location-container .date {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.weather-container {
+  text-align: center;
+}
+
+.weather-container .temperature {
+  color: white;
+  position: relative;
+  display: inline-block;
+  margin: 30px auto;
+  padding: 15px 25px;
+  font-size: 100px;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.weather-container .weather {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
